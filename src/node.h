@@ -19,14 +19,16 @@ public:
 
 
     BinaryTreeNode(T data):
-    m_data (data)
+    //instead of just having m_data (data), the std::move just moves the data value
+    //to its new master
+    m_data(std::move(data))
     {}
 
     std::unique_ptr<BinaryTreeNode<T>> m_left_child;
     std::unique_ptr<BinaryTreeNode<T>> m_right_child;
 
-    T data(){
-    return data;
+    const T& data(){
+    return m_data;
     }
 
 
