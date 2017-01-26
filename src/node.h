@@ -8,7 +8,7 @@
 
 
 template <typename T>
-class BinarySearchTree
+class BinaryTreeNode
 {
 
 
