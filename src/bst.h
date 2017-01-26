@@ -21,7 +21,7 @@ private:
 
     std::size_t m_size = 0;
 
-    std::unique_ptr<BinaryTreeNode<T>>;
+    std::unique_ptr<BinaryTreeNode<T> > m_root_node;
 
 
 
