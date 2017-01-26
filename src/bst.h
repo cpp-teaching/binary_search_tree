@@ -1,6 +1,10 @@
 #ifndef BST_H
 #define BST_H
+#include "node.h"
 #include <cstddef>
+#include <memory>
+
+
 
 
 template <typename T>
@@ -17,7 +21,7 @@ private:
 
     std::size_t m_size = 0;
 
-
+    std::unique_ptr<BinaryTreeNode<T>>;
 
 
 
