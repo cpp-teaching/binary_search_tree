@@ -11,6 +11,9 @@ public:
     BinarySearchTree& operator =(BinarySearchTree&& other) = delete;
 
 
+private:
+
+    std::size_t m_size;
 
 
 
