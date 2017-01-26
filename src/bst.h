@@ -21,16 +21,15 @@ public:
     BinarySearchTree& operator =(BinarySearchTree&& other) = delete;
 
 
-private:
-
-    std::size_t m_size = 0;
-
-
     const std::size_t size() const{
     return m_size;
     }
 
 
+
+private:
+
+    std::size_t m_size = 0;
 
     std::unique_ptr<BinaryTreeNode<T>> m_root_node;
 
