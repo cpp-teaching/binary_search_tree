@@ -27,7 +27,7 @@ public:
     std::unique_ptr<BinaryTreeNode<T>> m_left_child;
     std::unique_ptr<BinaryTreeNode<T>> m_right_child;
 
-    const T& data(){
+    const T& data() const{
     return m_data;
     }
 
