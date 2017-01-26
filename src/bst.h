@@ -11,6 +11,10 @@ template <typename T>
 class BinarySearchTree
 {
 public:
+
+    BinarySearchTree(){}
+
+
     BinarySearchTree(const BinarySearchTree& other) = delete;
     BinarySearchTree(BinarySearchTree&& other) = delete;
     BinarySearchTree operator =(const BinarySearchTree& other) = delete;
@@ -21,7 +25,7 @@ private:
 
     std::size_t m_size = 0;
 
-    std::unique_ptr<BinaryTreeNode<T> > m_root_node;
+    std::unique_ptr<BinaryTreeNode<T>> m_root_node;
 
 
 
