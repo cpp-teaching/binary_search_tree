@@ -1,3 +1,12 @@
+
+
+
+
+#ifndef NODE_H
+#define NODE_H
+
+
+
 template <typename T>
 class BinarySearchTree
 {
@@ -6,3 +15,16 @@ class BinarySearchTree
 
 
 };
+
+
+
+
+
+
+
+
+
+
+#endif
+
+
