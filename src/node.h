@@ -15,12 +15,12 @@ class BinaryTreeNode
 {
 public:
 
-    BinaryTreeNode(){}
+    BinaryTreeNode(){};
 
 
-    BinaryTreeNode(T data){}
-    data (data);
-
+    BinaryTreeNode(T data);
+    data (data)
+    {}
 
     std::unique_ptr<BinaryTreeNode<T>> m_left_child;
     std::unique_ptr<BinaryTreeNode<T>> m_right_child;
