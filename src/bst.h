@@ -13,7 +13,7 @@ public:
 
 private:
 
-    std::size_t m_size;
+    std::size_t m_size = 0;
 
 
 
