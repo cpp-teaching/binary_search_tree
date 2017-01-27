@@ -32,12 +32,12 @@ public:
     return m_right_child;
     }
 
-    void set_right_child(T right_child) {
-    m_right_child(std::move(right_child));
+    void set_right_child(std::unique_ptr<BinaryTreeNode<T>>right_child) {
+    m_right_child = right_child;
     }
 
-    void set_left_child(T left_child) {
-    m_left_child(std::move(left_child));
+    void set_left_child(std::unique_ptr<BinaryTreeNode<T>>left_child) {
+    m_left_child = left_child;
     }
 
 
